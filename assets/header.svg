@@ -1,0 +1,343 @@
+<svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" width="100%">
+<defs>
+
+  <!-- Background -->
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"   stop-color="#0d0618"/>
+    <stop offset="45%"  stop-color="#130a2a"/>
+    <stop offset="100%" stop-color="#0a0f1e"/>
+  </linearGradient>
+
+  <!-- Aurora band gradients -->
+  <linearGradient id="auroraA" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#7c3aed" stop-opacity="0"/>
+    <stop offset="30%"  stop-color="#a855f7" stop-opacity="0.18"/>
+    <stop offset="60%"  stop-color="#ec4899" stop-opacity="0.14"/>
+    <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="auroraB" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#6366f1" stop-opacity="0"/>
+    <stop offset="40%"  stop-color="#818cf8" stop-opacity="0.12"/>
+    <stop offset="70%"  stop-color="#c084fc" stop-opacity="0.16"/>
+    <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="auroraC" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#ec4899" stop-opacity="0"/>
+    <stop offset="50%"  stop-color="#f9a8d4" stop-opacity="0.09"/>
+    <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+  </linearGradient>
+
+  <!-- Radial glows -->
+  <radialGradient id="glowLeft" cx="22%" cy="50%" r="40%">
+    <stop offset="0%"   stop-color="#7c3aed" stop-opacity="0.22"/>
+    <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowRight" cx="78%" cy="50%" r="38%">
+    <stop offset="0%"   stop-color="#ec4899" stop-opacity="0.18"/>
+    <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowCenter" cx="50%" cy="52%" r="30%">
+    <stop offset="0%"   stop-color="#a855f7" stop-opacity="0.13"/>
+    <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+  </radialGradient>
+
+  <!-- Name gradient -->
+  <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#c084fc"/>
+    <stop offset="42%"  stop-color="#f0abfc"/>
+    <stop offset="75%"  stop-color="#f9a8d4"/>
+    <stop offset="100%" stop-color="#818cf8"/>
+  </linearGradient>
+
+  <!-- Subtitle gradient -->
+  <linearGradient id="subGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#a78bfa" stop-opacity="0"/>
+    <stop offset="30%"  stop-color="#a78bfa" stop-opacity="0.85"/>
+    <stop offset="70%"  stop-color="#f472b6" stop-opacity="0.85"/>
+    <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+  </linearGradient>
+
+  <!-- Bottom border -->
+  <linearGradient id="botBar" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#a855f7" stop-opacity="0"/>
+    <stop offset="50%"  stop-color="#f472b6" stop-opacity="0.7"/>
+    <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+  </linearGradient>
+
+  <!-- Top border -->
+  <linearGradient id="topBar" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#6366f1" stop-opacity="0"/>
+    <stop offset="50%"  stop-color="#a855f7" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+  </linearGradient>
+
+  <!-- Filters -->
+  <filter id="blur-sm" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="2.5"/>
+  </filter>
+  <filter id="blur-md" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="6"/>
+  </filter>
+  <filter id="blur-lg" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="16"/>
+  </filter>
+  <filter id="glow-name" x="-40%" y="-60%" width="180%" height="220%">
+    <feGaussianBlur stdDeviation="10" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glow-dot" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <!-- Fine dot grid -->
+  <pattern id="grid" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="0.6" fill="#2e1065" opacity="0.5"/>
+  </pattern>
+
+  <!-- Clip -->
+  <clipPath id="clip">
+    <rect width="900" height="300"/>
+  </clipPath>
+
+  <style>
+    .a1  { animation: auroraA  8s ease-in-out infinite; }
+    .a2  { animation: auroraB 10s ease-in-out infinite; }
+    .a3  { animation: auroraC 12s ease-in-out infinite; }
+    .p1  { animation: pulse1   3s ease-in-out infinite; }
+    .p2  { animation: pulse2   4s ease-in-out infinite; }
+    .p3  { animation: pulse1   5s ease-in-out infinite; }
+    .p4  { animation: pulse2   3.5s ease-in-out infinite; }
+    .p5  { animation: pulse1   6s ease-in-out infinite; }
+    .arc1 { animation: arcFade 4s ease-in-out infinite; }
+    .arc2 { animation: arcFade 5s ease-in-out infinite 0.8s; }
+    .arc3 { animation: arcFade 6s ease-in-out infinite 1.5s; }
+    .arc4 { animation: arcFade 4.5s ease-in-out infinite 0.4s; }
+    .arc5 { animation: arcFade 5.5s ease-in-out infinite 1s; }
+    .arc6 { animation: arcFade 3.8s ease-in-out infinite 0.2s; }
+    .nm   { animation: nameGlow 5s ease-in-out infinite; }
+    .sd   { animation: statusPulse 2s ease-in-out infinite; }
+    .sr   { animation: statusRing  2s ease-in-out infinite; }
+    .scan { animation: scanline 9s linear infinite; }
+    .fl1  { animation: floatA 7s ease-in-out infinite; }
+    .fl2  { animation: floatB 9s ease-in-out infinite; }
+    .fl3  { animation: floatA 11s ease-in-out infinite; }
+    .fl4  { animation: floatB 8s ease-in-out infinite; }
+    .corner-tl { animation: cornerGlow 4s ease-in-out infinite; }
+    .corner-br { animation: cornerGlow 4s ease-in-out infinite 2s; }
+
+    @keyframes auroraA {
+      0%,100% { opacity:1; transform:translateY(0); }
+      50%      { opacity:0.55; transform:translateY(-6px); }
+    }
+    @keyframes auroraB {
+      0%,100% { opacity:0.8; transform:translateY(0); }
+      50%      { opacity:1; transform:translateY(8px); }
+    }
+    @keyframes auroraC {
+      0%,100% { opacity:0.6; }
+      50%      { opacity:1; }
+    }
+    @keyframes pulse1 {
+      0%,100% { opacity:0.9; r:3.5; }
+      50%      { opacity:0.25; r:4.5; }
+    }
+    @keyframes pulse2 {
+      0%,100% { opacity:0.7; r:3; }
+      50%      { opacity:0.15; r:4; }
+    }
+    @keyframes arcFade {
+      0%,100% { opacity:0; }
+      35%,65%  { opacity:1; }
+    }
+    @keyframes nameGlow {
+      0%,100% { opacity:1; }
+      50%      { opacity:0.88; }
+    }
+    @keyframes statusPulse {
+      0%,100% { opacity:1; r:4; }
+      50%      { opacity:0.4; r:5.5; }
+    }
+    @keyframes statusRing {
+      0%   { r:8;  opacity:0.25; }
+      100% { r:20; opacity:0; }
+    }
+    @keyframes scanline {
+      0%   { transform:translateY(-4px); opacity:0; }
+      5%   { opacity:0.15; }
+      90%  { opacity:0.15; }
+      100% { transform:translateY(304px); opacity:0; }
+    }
+    @keyframes floatA {
+      0%,100% { transform:translateY(0); }
+      50%      { transform:translateY(-9px); }
+    }
+    @keyframes floatB {
+      0%,100% { transform:translateY(0); }
+      50%      { transform:translateY(9px); }
+    }
+    @keyframes cornerGlow {
+      0%,100% { opacity:0.9; }
+      50%      { opacity:0.45; }
+    }
+  </style>
+</defs>
+
+<g clip-path="url(#clip)">
+
+  <!-- Base -->
+  <rect width="900" height="300" fill="url(#bg)"/>
+  <rect width="900" height="300" fill="url(#grid)"/>
+
+  <!-- Ambient radial glows -->
+  <rect width="900" height="300" fill="url(#glowLeft)"/>
+  <rect width="900" height="300" fill="url(#glowRight)"/>
+  <rect width="900" height="300" fill="url(#glowCenter)"/>
+
+  <!-- Aurora bands -->
+  <rect class="a1" x="0" y="60"  width="900" height="80" fill="url(#auroraA)" rx="40"/>
+  <rect class="a2" x="0" y="110" width="900" height="70" fill="url(#auroraB)" rx="35"/>
+  <rect class="a3" x="0" y="155" width="900" height="60" fill="url(#auroraC)" rx="30"/>
+
+  <!-- ── LEFT CONSTELLATION CLUSTER ── -->
+  <!-- Arc connectors -->
+  <path class="arc1" d="M 62 72 Q 88 112 105 158" fill="none" stroke="#a855f7" stroke-width="0.8" opacity="0"/>
+  <path class="arc2" d="M 105 158 Q 75 195 50 228" fill="none" stroke="#c084fc" stroke-width="0.7" opacity="0"/>
+  <path class="arc3" d="M 50 228 Q 95 250 138 262" fill="none" stroke="#a855f7" stroke-width="0.6" opacity="0"/>
+  <path class="arc4" d="M 62 72 Q 115 88 168 96" fill="none" stroke="#818cf8" stroke-width="0.5" opacity="0"/>
+  <path class="arc5" d="M 105 158 Q 138 200 138 262" fill="none" stroke="#c084fc" stroke-width="0.5" opacity="0"/>
+
+  <!-- Nodes -->
+  <circle class="p1" cx="62"  cy="72"  r="3.5" fill="#c084fc" filter="url(#glow-dot)"/>
+  <circle class="p2" cx="105" cy="158" r="4.5" fill="#a855f7" filter="url(#glow-dot)"/>
+  <circle class="p3" cx="50"  cy="228" r="3"   fill="#c084fc"/>
+  <circle class="p4" cx="138" cy="262" r="2.5" fill="#f472b6"/>
+  <circle class="p5" cx="168" cy="96"  r="2.5" fill="#818cf8"/>
+  <circle class="p1" cx="78"  cy="278" r="2"   fill="#a855f7"/>
+
+  <!-- ── RIGHT CONSTELLATION CLUSTER ── -->
+  <path class="arc6" d="M 838 62 Q 865 108 878 158" fill="none" stroke="#f472b6" stroke-width="0.8" opacity="0"/>
+  <path class="arc1" d="M 878 158 Q 848 205 822 222" fill="none" stroke="#f9a8d4" stroke-width="0.7" opacity="0"/>
+  <path class="arc2" d="M 822 222 Q 852 252 868 268" fill="none" stroke="#f472b6" stroke-width="0.6" opacity="0"/>
+  <path class="arc3" d="M 730 78 Q 784 70 838 62" fill="none" stroke="#818cf8" stroke-width="0.5" opacity="0"/>
+  <path class="arc4" d="M 878 158 Q 868 215 868 268" fill="none" stroke="#f472b6" stroke-width="0.5" opacity="0"/>
+
+  <circle class="p2" cx="838" cy="62"  r="3.5" fill="#f472b6" filter="url(#glow-dot)"/>
+  <circle class="p1" cx="878" cy="158" r="4.5" fill="#f9a8d4" filter="url(#glow-dot)"/>
+  <circle class="p4" cx="822" cy="222" r="3"   fill="#f472b6"/>
+  <circle class="p3" cx="868" cy="268" r="2.5" fill="#f9a8d4"/>
+  <circle class="p5" cx="730" cy="78"  r="2.5" fill="#818cf8"/>
+  <circle class="p2" cx="838" cy="284" r="2"   fill="#f472b6"/>
+
+  <!-- ── FLOATING DIAMOND SHAPES ── -->
+  <!-- Top-left diamond -->
+  <g class="fl1">
+    <polygon points="224,22 234,14 244,22 234,30"
+      fill="none" stroke="#a855f7" stroke-width="1.2" opacity="0.55"/>
+    <polygon points="227,22 234,17 241,22 234,27"
+      fill="none" stroke="#c084fc" stroke-width="0.4" opacity="0.28"/>
+  </g>
+
+  <!-- Top-right diamond -->
+  <g class="fl2">
+    <polygon points="666,18 678,10 690,18 678,26"
+      fill="none" stroke="#f472b6" stroke-width="1.2" opacity="0.5"/>
+    <polygon points="669,18 678,13 687,18 678,23"
+      fill="none" stroke="#f9a8d4" stroke-width="0.4" opacity="0.24"/>
+  </g>
+
+  <!-- Bottom-left diamond -->
+  <g class="fl3">
+    <polygon points="188,252 197,244 206,252 197,260"
+      fill="none" stroke="#818cf8" stroke-width="0.9" opacity="0.4"/>
+  </g>
+
+  <!-- Bottom-right diamond -->
+  <g class="fl4">
+    <polygon points="752,248 762,240 772,248 762,256"
+      fill="none" stroke="#c084fc" stroke-width="0.9" opacity="0.38"/>
+  </g>
+
+  <!-- Mid-left small circle ornament -->
+  <g class="fl2">
+    <circle cx="195" cy="148" r="7"  fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.35"/>
+    <circle cx="195" cy="148" r="12" fill="none" stroke="#7c3aed" stroke-width="0.3" opacity="0.18"/>
+  </g>
+
+  <!-- Mid-right small circle ornament -->
+  <g class="fl1">
+    <circle cx="705" cy="158" r="7"  fill="none" stroke="#ec4899" stroke-width="0.8" opacity="0.32"/>
+    <circle cx="705" cy="158" r="12" fill="none" stroke="#ec4899" stroke-width="0.3" opacity="0.16"/>
+  </g>
+
+  <!-- Scanline -->
+  <rect class="scan" x="0" y="0" width="900" height="2" fill="url(#subGrad)" opacity="0.2"/>
+
+  <!-- Top & bottom border lines -->
+  <rect x="0" y="0"   width="900" height="1.8" fill="url(#topBar)"/>
+  <rect x="0" y="298" width="900" height="2"   fill="url(#botBar)"/>
+
+  <!-- ── CORNER BRACKETS ── -->
+  <!-- Top-left -->
+  <path class="corner-tl" d="M 0 36 L 0 0 L 36 0" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.9"/>
+  <path d="M 5 36 L 5 5 L 36 5" fill="none" stroke="#c084fc" stroke-width="0.4" opacity="0.3"/>
+  <!-- Top-right -->
+  <path class="corner-tl" d="M 864 0 L 900 0 L 900 36" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.9"/>
+  <path d="M 864 5 L 895 5 L 895 36" fill="none" stroke="#c084fc" stroke-width="0.4" opacity="0.3"/>
+  <!-- Bottom-left -->
+  <path class="corner-br" d="M 0 264 L 0 300 L 36 300" fill="none" stroke="#f472b6" stroke-width="2" opacity="0.8"/>
+  <path d="M 5 264 L 5 295 L 36 295" fill="none" stroke="#f9a8d4" stroke-width="0.4" opacity="0.28"/>
+  <!-- Bottom-right -->
+  <path class="corner-br" d="M 864 300 L 900 300 L 900 264" fill="none" stroke="#f472b6" stroke-width="2" opacity="0.8"/>
+  <path d="M 864 295 L 895 295 L 895 264" fill="none" stroke="#f9a8d4" stroke-width="0.4" opacity="0.28"/>
+
+  <!-- ── HUD META TEXT ── -->
+  <text x="14" y="18"
+    font-family="'Courier New',Courier,monospace" font-size="8.5"
+    fill="#581c87" opacity="0.65" letter-spacing="2">SYS · FULL STACK · AI · WEB DEV · ISE</text>
+  <text x="886" y="288"
+    font-family="'Courier New',Courier,monospace" font-size="8.5"
+    fill="#831843" opacity="0.55" text-anchor="end" letter-spacing="1">meghanan-21@github</text>
+
+  <!-- ── MAIN NAME — deep glow layer ── -->
+  <text x="450" y="138"
+    font-family="'Courier New',Courier,monospace"
+    font-size="74" font-weight="900"
+    fill="#a855f7" text-anchor="middle" letter-spacing="3"
+    opacity="0.2" filter="url(#blur-lg)">MEGHANA N</text>
+
+  <!-- ── MAIN NAME ── -->
+  <text class="nm" x="450" y="138"
+    font-family="'Courier New',Courier,monospace"
+    font-size="74" font-weight="900"
+    fill="url(#nameGrad)" text-anchor="middle" letter-spacing="3"
+    filter="url(#glow-name)">MEGHANA N</text>
+
+  <!-- ── ANIMATED DIVIDER ── -->
+  <line x1="270" y1="155" x2="630" y2="155"
+    stroke="url(#subGrad)" stroke-width="1" opacity="0.6"/>
+  <!-- Endpoint dots -->
+  <circle cx="270" cy="155" r="2.2" fill="#a855f7" opacity="0.8"/>
+  <circle cx="630" cy="155" r="2.2" fill="#f472b6" opacity="0.8"/>
+  <!-- Center diamond on divider -->
+  <polygon points="450,150 455,155 450,160 445,155" fill="#f0abfc" opacity="0.7"/>
+
+  <!-- ── ROLE LINE ── -->
+  <text x="450" y="185"
+    font-family="'Courier New',Courier,monospace"
+    font-size="11" font-weight="400"
+    fill="#c084fc" text-anchor="middle" letter-spacing="4.5" opacity="0.88">
+    FULL STACK DEVELOPER · API ARCHITECTURE · MITE &apos;27
+  </text>
+
+  <!-- ── STATUS INDICATOR ── -->
+  <circle class="sr" cx="302" cy="238" r="8"  fill="#a855f7" opacity="0.2"/>
+  <circle class="sd" cx="302" cy="238" r="4"  fill="#d946ef" filter="url(#glow-dot)"/>
+  <text x="316" y="243"
+    font-family="'Courier New',Courier,monospace"
+    font-size="11" fill="#e879f9" opacity="0.85" letter-spacing="0.5">
+    actively building · open to internships
+  </text>
+
+</g>
+</svg>
