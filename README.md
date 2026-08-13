@@ -83,11 +83,12 @@ Currently, I'm focused on improving my engineering fundamentals, contributing to
 
 <td valign="top">
 
+
 ### Languages
 
-![C](https://img.shields.io/badge/C-0f172a?style=flat-square\&logo=c\&logoColor=A8B9CC)
-![Pyton](https://img.shields.io/badge/Python-0f172a?style=flat-square\&logo=openjdk\&logoColor=ED8B00)
-![java](https://img.shields.io/badge/Java-0f172a?style=flat-square\&logo=react\&logoColor=ffffff
+![C](https://img.shields.io/badge/C-0f172a?style=flat-square&logo=c&logoColor=A8B9CC)
+![Python](https://img.shields.io/badge/Python-0f172a?style=flat-square&logo=python&logoColor=3776AB)
+![Java](https://img.shields.io/badge/Java-0f172a?style=flat-square&logo=openjdk&logoColor=ED8B00)
 
 </td>
 </tr>
@@ -97,20 +98,19 @@ Currently, I'm focused on improving my engineering fundamentals, contributing to
 
 ## Featured Projects
 
-| Project                                                                                   | Description                                                                      | Technologies                      |
-| :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------- | :-------------------------------- |
-| **[PrepAI](https://github.com/Meghanan-21/PrepAI)**                               | AI-powered resume analysis platform providing ATS-oriented feedback and insights | React · Vite · Puter.js · Zustand |
-| **[AI Video Course Generator](https://github.com/Meghanan-21/ai-video-course-generator)** | Generates structured learning content and video courses from a given topic       | Next.js · TypeScript              |
-| **[BlogVerse](https://github.com/Meghanan-21/blogverse)**                                 | Full-stack blogging platform with a modern web interface                         | JavaScript                        |
-| **[Help2Heal](https://github.com/Meghanan-21/Help2Heal)**                                 | Healthcare platform for managing and booking appointments                        | JavaScript                        |
-| **[JAVA Games](https://github.com/Meghanan-21/JAVA_GAMES)**                               | Collection of classic games implemented in Java                                  | Java                              |
-| **[Simple Calculator](https://github.com/Meghanan-21/simple-calculator)**                 | Lightweight calculator application built from the fundamentals                   | HTML · CSS · JavaScript           |
+## 🚀 Projects
+
+| Project | Description | Technologies |
+| :--- | :--- | :--- |
+| **[PrepAI](https://github.com/Meghanan-21/PrepAI)** | AI-powered interview prep platform — analyzes resumes & job descriptions to generate personalized questions and ATS scores | React · Vite · Node.js · Express · MongoDB · Gemini AI |
+| **[AI Video Course Generator](https://github.com/Meghanan-21/ai-video-course-generator)** | Generates structured learning content and video courses from a given topic | Next.js · React · Clerk · Neon (Postgres) · Drizzle ORM |
+| **[BlogVerse](https://github.com/Meghanan-21/blogverse)** | Full-stack blogging platform with a modern web interface | Next.js · MongoDB · Tailwind CSS · Cloudinary |
+| **[Help2Heal](https://github.com/Meghanan-21/Help2Heal)** | Healthcare platform for managing and booking appointments | React · Vite · Node.js · Express · MongoDB · Cashfree API |
+| **[JAVA Games](https://github.com/Meghanan-21/JAVA_GAMES)** | Collection of classic games implemented in Java | Java |
+| **[Simple Calculator](https://github.com/Meghanan-21/simple-calculator)** | Lightweight calculator application built from the fundamentals | HTML · CSS · JavaScript |
 
 ---
 
-## Open Source & Collaboration
-
-I'm actively interested in contributing to open-source projects and collaborating with developers who enjoy building useful software.
 
 ### Areas I'm interested in contributing to
 
