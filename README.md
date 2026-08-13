@@ -153,7 +153,7 @@ I value **simplicity, maintainability, and continuous improvement** over unneces
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-0f172a?style=for-the-badge\&logo=vercel\&logoColor=ffffff\&labelColor=1e1b4b)](https://meghana-n-portfolio.vercel.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-0f172a?style=for-the-badge\&logo=vercel\&logoColor=ffffff\&labelColor=1e1b4b)](https://meghana-portfolio-wheat.vercel.app/)
  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0f172a?style=for-the-badge\&logo=linkedin\&logoColor=0A66C2\&labelColor=1e1b4b)](https://www.linkedin.com/in/meghana-n-3b6539331/)
  
