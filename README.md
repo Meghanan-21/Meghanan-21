@@ -83,11 +83,11 @@ Currently, I'm focused on improving my engineering fundamentals, contributing to
 
 <td valign="top">
 
-### Other
+### Languages
 
 ![C](https://img.shields.io/badge/C-0f172a?style=flat-square\&logo=c\&logoColor=A8B9CC)
-![Java](https://img.shields.io/badge/Java-0f172a?style=flat-square\&logo=openjdk\&logoColor=ED8B00)
-![Zustand](https://img.shields.io/badge/Zustand-0f172a?style=flat-square\&logo=react\&logoColor=ffffff)
+![Pyton](https://img.shields.io/badge/Python-0f172a?style=flat-square\&logo=openjdk\&logoColor=ED8B00)
+![java](https://img.shields.io/badge/Java-0f172a?style=flat-square\&logo=react\&logoColor=ffffff
 
 </td>
 </tr>
@@ -99,7 +99,7 @@ Currently, I'm focused on improving my engineering fundamentals, contributing to
 
 | Project                                                                                   | Description                                                                      | Technologies                      |
 | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------- | :-------------------------------- |
-| **[PrepAI](https://resuscan-ai-bymeghana.vercel.app)**                               | AI-powered resume analysis platform providing ATS-oriented feedback and insights | React · Vite · Puter.js · Zustand |
+| **[PrepAI](https://github.com/Meghanan-21/PrepAI)**                               | AI-powered resume analysis platform providing ATS-oriented feedback and insights | React · Vite · Puter.js · Zustand |
 | **[AI Video Course Generator](https://github.com/Meghanan-21/ai-video-course-generator)** | Generates structured learning content and video courses from a given topic       | Next.js · TypeScript              |
 | **[BlogVerse](https://github.com/Meghanan-21/blogverse)**                                 | Full-stack blogging platform with a modern web interface                         | JavaScript                        |
 | **[Help2Heal](https://github.com/Meghanan-21/Help2Heal)**                                 | Healthcare platform for managing and booking appointments                        | JavaScript                        |
