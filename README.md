@@ -77,8 +77,6 @@ Currently, I'm focused on improving my engineering fundamentals, contributing to
 
 ![Git](https://img.shields.io/badge/Git-0f172a?style=flat-square\&logo=git\&logoColor=F05032)
 ![GitHub](https://img.shields.io/badge/GitHub-0f172a?style=flat-square\&logo=github\&logoColor=ffffff)
-![Docker](https://img.shields.io/badge/Docker-0f172a?style=flat-square\&logo=docker\&logoColor=2496ED)
-![Linux](https://img.shields.io/badge/Linux-0f172a?style=flat-square\&logo=linux\&logoColor=FCC624)
 ![Vercel](https://img.shields.io/badge/Vercel-0f172a?style=flat-square\&logo=vercel\&logoColor=ffffff)
 
 </td>
