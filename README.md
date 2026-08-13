@@ -99,7 +99,7 @@ Currently, I'm focused on improving my engineering fundamentals, contributing to
 
 | Project                                                                                   | Description                                                                      | Technologies                      |
 | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------- | :-------------------------------- |
-| **[ResuScan AI](https://resuscan-ai-bymeghana.vercel.app)**                               | AI-powered resume analysis platform providing ATS-oriented feedback and insights | React · Vite · Puter.js · Zustand |
+| **[PrepAI](https://resuscan-ai-bymeghana.vercel.app)**                               | AI-powered resume analysis platform providing ATS-oriented feedback and insights | React · Vite · Puter.js · Zustand |
 | **[AI Video Course Generator](https://github.com/Meghanan-21/ai-video-course-generator)** | Generates structured learning content and video courses from a given topic       | Next.js · TypeScript              |
 | **[BlogVerse](https://github.com/Meghanan-21/blogverse)**                                 | Full-stack blogging platform with a modern web interface                         | JavaScript                        |
 | **[Help2Heal](https://github.com/Meghanan-21/Help2Heal)**                                 | Healthcare platform for managing and booking appointments                        | JavaScript                        |
