@@ -9,7 +9,7 @@
 <br/>
 
 ![](https://img.shields.io/badge/Focus-Full_Stack_%7C_Web_%7C_Problem_Solving-030712?style=flat-square&labelColor=0a1120&color=00d4ff)&nbsp;
-![](https://img.shields.io/badge/Stack-Python_%7C_Java_%7C_SpringBoot_%7C_React-030712?style=flat-square&labelColor=0a1120&color=a78bfa)&nbsp;
+![](https://img.shields.io/badge/Stack-Python_%7C_Java_%7C_%7C_React-030712?style=flat-square&labelColor=0a1120&color=a78bfa)&nbsp;
 ![](https://img.shields.io/badge/Status-Actively%20Building-030712?style=flat-square&labelColor=0a1120&color=10b981)&nbsp;
 ![](https://img.shields.io/badge/Open%20To-Collaborate_%26_Internship_Opportunities-030712?style=flat-square&labelColor=0a1120&color=f59e0b)
 
